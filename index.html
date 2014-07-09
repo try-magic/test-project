@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home page!</title>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+<body>
+	<div id="header" class="bg-primary">
+		<div class="container">
+			<h1 class="title col-md-8">Welcome to your home page!</h1>
+			<ul class="action-menu col-md-4 list-inline">
+				<li><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li><a href="#game"><span class="glyphicon glyphicon-star"></span> Game</a></li>
+				<li><a href="#settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div class="container">
+			<div class="left-col col-md-3">
+				<!--a class="btn btn-default btn-xs ">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a-->
+				<div class="img-container">
+					<img class="img-thumbnail" src="images/nophoto.jpg"/>
+				</div>
+				<div class="info-container">
+					<dl class="dl-horizontal row">
+						<dt>Fullname</dt>
+						<dd>Test</dd>
+						<dt>Age</dt>
+						<dd>Test</dd>
+						<dt>Country</dt>
+						<dd>Test</dd>
+						<dt>City</dt>
+						<dd>Test</dd>
+						<dt>Nationality</dt>
+						<dd>Test</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="main-col col-md-9">
+				<h2 class="title text-primary col-md-12">Your wall</h2>
+				<div class="wall-list col-md-12">
+					<div class="add-newpost row">
+						<textarea class="form-control" id="add-post" placeholder="Share your news!"/></textarea>
+						<div class="links">
+							<a class="btn btn-primary btn-xs" href="#addpost">Add post</a>
+						</div>
+					</div>
+					<ul class="comments row">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="bg-primary">
+		<div class="container">
+			<h3>© created for EPAM Systems</h3>
+		</div>
+	</div>
+	<div id="modal">
+		<div class="settings-container col-md-12">
+			<h2 class="title text-primary col-md-12">Personal account</h2>
+			<form id="settings-form">
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="text" name="email" class="form-control" id="email" placeholder="Enter email" value="A@e.com">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Nationality</label>
+					<input type="text" name="nationality" class="form-control" id="nationality" placeholder="Enter nationality" value="Ukrainian">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Firstname</label>
+					<input type="text" name="firstName" class="form-control" id="firstName" placeholder="Enter firstname" value="Artem">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Country</label>
+					<input type="text" name="country" class="form-control" id="country" placeholder="Enter country" value="Ukraine">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Lastname</label>
+					<input type="text" name="lastName" class="form-control" id="lastName" placeholder="Enter lastname" value="Elyseev">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">City</label>
+					<input type="text" name="city" class="form-control" id="city" placeholder="Enter city" value="Kiev">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Age</label>
+					<input type="text" name="age" class="form-control" id="age" placeholder="Enter age" value="23">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Image</label>
+					<input type="file" name="image" class="form-control" id="image">
+				</div>
+			</form>
+			<a href="#createAccount" id="sing-up"class="btn btn-primary col-md-3">Sign up</a>
+			<a href="#useDefault" id="use-default" class="btn btn-default col-md-3 col-md-offset-6">Use default</a>
+		</div>
+	</div>
+	<div id="overlay"></div>
+	<!--script type="text/javascript" src="js/processing.js"></script-->
+	<script type="text/javascript" src="js/test.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
